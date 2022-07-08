@@ -14,9 +14,11 @@ context('Window', () => {
     
     // current navigated url https://www.carsome.my/buy-car/perodua
     cy.url().should('include', 'buy-car/perodua');
-
-
     
+    //  get filter model name as parents Perodu and child as Axia
+    cy.get('.filter__btn-list').children('.filter__btn-list__makeModel').children('.filter__btn').click();
+
+
   })
 
 })
