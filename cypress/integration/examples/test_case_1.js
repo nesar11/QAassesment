@@ -6,7 +6,8 @@ context('Window', () => {
   })
   it('cy.title() - get the title', () => {
     
-
+    // visit the website and click on buy car class
+    cy.get('.buy-car').click();
 
   })
 
