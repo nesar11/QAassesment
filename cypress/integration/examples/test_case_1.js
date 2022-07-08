@@ -8,6 +8,9 @@ context('Window', () => {
     
     // visit the website and click on buy car class
     cy.get('.buy-car').click();
+    
+    // curent url will be https://www.carsome.my/buy-car  and from the menu box brand select as Perodua then click
+    cy.get('.menu-box-brand').contains("Perodua").click();
 
   })
 
