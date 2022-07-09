@@ -17,7 +17,10 @@ context('Window', () => {
 
       // select the from array first item as 0 which local
       cy.get('.content-list-wrapper').children('.content-item').eq('0').click();
-      
+
+      // Select the body type  from array first item as 3 which Hatchback
+      cy.get('.last-top').children('.last-content-item').eq('3').click();
+
     })
 
 })
