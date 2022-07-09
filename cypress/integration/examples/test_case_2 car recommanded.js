@@ -24,6 +24,12 @@ context('Window', () => {
       // click on view results button follow by parent and child class DOM
       cy.get('.view-button-wrapper').children('.view-button').eq('0').click();
 
+     //  loading duration 5000s
+      cy.wait(5000);
+
+      // view all Peradua AXIA lower to higher price car list sort result
+      cy.get('.content-wrapper').children('.content-item').children('.item-wrapper').children('.item-bottom').eq('0').children('.bottom-bottom').children('.bottom-left').invoke('removeAttr','target').click();
+
 
     })
 
