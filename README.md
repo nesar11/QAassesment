@@ -1,6 +1,4 @@
 # QAassesment
-# QAassesment
-
 #Cypress Environment set up guide 
 
 <h3>Step 1:</h3> Nodejs version and download link 
