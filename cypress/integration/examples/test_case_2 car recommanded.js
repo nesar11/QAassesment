@@ -21,6 +21,10 @@ context('Window', () => {
       // Select the body type  from array first item as 3 which Hatchback
       cy.get('.last-top').children('.last-content-item').eq('3').click();
 
+      // click on view results button follow by parent and child class DOM
+      cy.get('.view-button-wrapper').children('.view-button').eq('0').click();
+
+
     })
 
 })
